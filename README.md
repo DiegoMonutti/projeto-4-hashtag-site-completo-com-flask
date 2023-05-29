@@ -1,0 +1,1 @@
+Projeto de criação de site com Python e Flask desenvolvido dentro do curso Python Impressionador da Hashtag Treinamentos
