@@ -7,15 +7,16 @@
         <div class="row">
             <div class="col">
                 <form method="POST" action="" class="border p-4 mt-2">
+                    {{ form_login.csrf_token }}
                     <legend>Login</legend>
                         <fieldset>
                             <div class="form-group">
-                                {{ form_login.email.label(class="form-control-label") }}
-                                {{ form_login.email(class="form-control") }}
+                                {{ form_login.email_login.label(class="form-control-label") }}
+                                {{ form_login.email_login(class="form-control") }}
                             </div>
                             <div class="form-group">
-                                {{ form_login.senha.label(class="form-control-label") }}
-                                {{ form_login.senha(class="form-control") }}
+                                {{ form_login.senha_login.label(class="form-control-label") }}
+                                {{ form_login.senha_login(class="form-control") }}
                             </div>
                             <div class="form-group">
                                 {{ form_login.lembrar_dados.label(class="form-check-label") }}
@@ -27,6 +28,7 @@
             </div>
             <div class="col">
                 <form method="POST" action="" class="border p-4 mt-2">
+                    {{ form_criarconta.csrf_token }}
                     <legend>Criar Conta</legend>
                         <fieldset>
                             <div class="form-group">
@@ -34,12 +36,12 @@
                                 {{ form_criarconta.username(class="form-control") }}
                             </div>
                             <div class="form-group">
-                                {{ form_criarconta.email.label(class="form-control-label") }}
-                                {{ form_criarconta.email(class="form-control") }}
+                                {{ form_criarconta.email_criarconta.label(class="form-control-label") }}
+                                {{ form_criarconta.email_criarconta(class="form-control") }}
                             </div>
                             <div class="form-group">
-                                {{ form_criarconta.senha.label(class="form-control-label") }}
-                                {{ form_criarconta.senha(class="form-control") }}
+                                {{ form_criarconta.senha_criarconta.label(class="form-control-label") }}
+                                {{ form_criarconta.senha_criarconta(class="form-control") }}
                             </div>
                             <div class="form-group">
                                 {{ form_criarconta.confirmacao_senha.label(class="form-control-label") }}
